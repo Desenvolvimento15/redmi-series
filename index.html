@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>redmi Series</title>
+</head>
+
+<body>
+
+<section>
+
+    <div class="circle"></div>
+
+    <header>
+    <h1 class="logo">Redmi Series</h1>
+    
+    <ul>
+    <li><a href="#">Redmi</a></li>
+    <li><a href="#">Redmi Note</a></li>
+    </ul>
+
+    </header>
+
+    <div class="content">
+
+        <div class="textBox">
+            <h2>Junte-se à revolução tecnológica <br>com a <span>Redmi Series</span> a diferença!</h2>
+            <p>Prepare-se para transformar sua experiência tecnológica com a incrível linha Redmi Series da Xiaomi!<br>Cada modelo é uma combinação perfeita de design elegante, desempenho excepcional e inovação avançada.<br>Desde a impressionante qualidade de câmera até a bateria de longa duração, os smartphones Redmi<br>são projetados para acompanhar seu estilo de vida dinâmico.</p>
+            <a href="#">Veja Mais</a>
+        </div>
+
+        <div class="imgBox">
+            <img src="./img01.png" alt="" class="redmi">
+            
+        </div>
+    </div>
+
+    <ul class="thumb">
+        <li style="display: flex; flex-direction: column; align-items: center;"><img src="./thumb1.png" onclick="imgSlider('img01.png')">Redmi A3</li>
+        <li style="display: flex; flex-direction: column; align-items: center;"><img src="./thumb2.png" onclick="imgSlider('img02.png')">Redmi 13C</li>
+        <li style="display: flex; flex-direction: column; align-items: center;"><img src="./thumb3.png" onclick="imgSlider('img03.png')">Redmi Note 13</li>
+    </ul>
+</section>
+   <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.redmi').src = anything;
+    }
+   </script>
+</body>
+</html>
